@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FullCalendarModule } from 'ng-fullcalendar';
+import { FormsModule } from '@angular/forms';
 
 import { CalComponent } from './calendar/calendar.component';
 import { WorkoutComponent } from './workouts/workouts.component';
@@ -27,7 +28,8 @@ import { AppBootstrapModule } from './app-bootstrap.module'
     BrowserModule,
     FullCalendarModule,
     AppRoutingModule,
-    AppBootstrapModule
+    AppBootstrapModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

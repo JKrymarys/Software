@@ -14,15 +14,18 @@ import { FormsModule  } from '@angular/forms';
 
     workouts = WORKOUTS;
     selectedWorkout : Workout;
+    show: boolean;
+
 
     constructor() {}
     ngOnInit()
     {
-
+        this.selectedWorkout = WORKOUTS[0];
     }
 
     onSelect(workout : Workout)
     {
         this.selectedWorkout = workout;
     }
+
   }

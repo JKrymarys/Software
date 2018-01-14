@@ -1,14 +1,18 @@
-<h3>Calendar of workouts</h3> 
+<h3 class="alert alert-dark" role="alert">Dashboard</h3> 
 
 <div class="row">
     <div class="col-md-4"> 
-        <h3>
+        <h3 class="alert alert-dark" role="alert">
             Workouts:
-            <workouts-component></workouts-component>
         </h3>
 
+            <workouts-component></workouts-component>
+     
+
     </div>
-    <div class="col-md-8" *ngIf="calendarOptions">
+    <input type="button" onclick="onButtonClick()">
+
+    <div class="col-md-6" *ngIf="calendarOptions">
         <ng-fullcalendar #ucCalendar [options]="calendarOptions" (eventClick)="eventClick($event.detail)" (eventDrop)="updateEvent($event.detail)"
             (eventResize)="updateEvent($event.detail)" (clickButton)="clickButton($event.detail)"></ng-fullcalendar>
       </div>

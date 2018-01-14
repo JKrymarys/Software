@@ -1,14 +1,26 @@
-<li *ngFor="let workout of workouts"
-  [class.selected]="workout === selectedWorkout"
-  (click)="onSelect(workout)">
-  <span class="badge">{{workout.id}}</span> {{workout.name}}
+<li *ngFor="let workout of workouts" [class.selected]="workout === selectedWorkout" (click)="onSelect(workout)">
+    <span class="badge"></span> {{workout.name}} {{workout.time}} {{workout.couch}}
+
 </li>
 
+<br>
+<button (click)="show = !show">{{show ? 'hide editor' : 'show editor'}}</button>
 
-<h2>{{ selectedWorkout.name | uppercase }} Details</h2>
-<div><span>id: </span>{{selectedWorkout.id}}</div>
-<div>
-  <label>name:
-    <!-- <input [(ngModel)]="selectedWorkout.name" placeholder="name"> -->
-  </label>
+<div *ngIf="show">
+    <h3 class="alert alert-dark"> Selected workout: </h3>
+
+    <h2>{{ selectedWorkout.name | uppercase }} Details</h2>
+    <div>
+        <label>Name:
+            <input [(ngModel)]="selectedWorkout.name" placeholder="name">
+        </label>
+        <label>Length:
+            <input [(ngModel)]="selectedWorkout.time" placeholder="time">
+        </label>
+        <label>Couch:
+            <input [(ngModel)]="selectedWorkout.couch" placeholder="couch">
+        </label>
+    </div>
+
+
 </div>

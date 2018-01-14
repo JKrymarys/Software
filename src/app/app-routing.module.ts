@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './login&registration/login.component';
 import { RegistrationComponent } from './login&registration/registration.component';
+import { RecoveryComponent } from './login&registration/registration.component';
 import { CalComponent } from './calendar/calendar.component';
 
 const routes: Routes = [
@@ -10,7 +11,8 @@ const routes: Routes = [
   { path: 'registration', component: RegistrationComponent },
   { path: '', redirectTo: 'login', pathMatch: "full" },
   { path: 'dashboard', component: CalComponent },
-  { path: 'signin', component: RegistrationComponent }
+  { path: 'signin', component: RegistrationComponent },
+  { path: 'recovery', component: RegistrationComponent }
 ];
 
 @NgModule({
