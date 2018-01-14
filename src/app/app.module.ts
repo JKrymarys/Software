@@ -15,7 +15,7 @@ import { RegistrationComponent } from './login&registration/registration.compone
 import { RecoveryComponent } from './login&registration/recovery.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppBootstrapModule } from './app-bootstrap.module'
-
+import { UserDetailComponent } from './user/userDetail.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +24,16 @@ import { AppBootstrapModule } from './app-bootstrap.module'
     LoginComponent,
     RegistrationComponent,
     WorkoutComponent,
-    RecoveryComponent
+    RecoveryComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
     FullCalendarModule,
     AppRoutingModule,
     AppBootstrapModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

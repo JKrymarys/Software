@@ -5,7 +5,7 @@ export class User{
   pesel: number;
   gender: string;
   birthdate: string;
-  telefone: number;
+  telephone: number;
   address: string;
 
 }

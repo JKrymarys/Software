@@ -9,7 +9,7 @@
 <div *ngIf="show">
     <h3 class="alert alert-dark"> Selected workout: </h3>
 
-    <h2>{{ selectedWorkout.name | uppercase }} Details</h2>
+    <h4>{{ selectedWorkout.name | uppercase }} Details</h4>
     <div>
         <label>Name:
             <input [(ngModel)]="selectedWorkout.name" placeholder="name">
