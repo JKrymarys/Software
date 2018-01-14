@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css"> -->
+</head>
+<body   >
+
+<div class="container" >
+    <div class="row">
+        <div class="col-md-6">
+            <form action="" method="post" id="fileForm" role="form">
+                <fieldset>
+                    <legend class="text-left">Login</legend>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:
+                        </label>
+                        <input class="form-control" required type="text" name="email" id="email"
+                               onchange="email_validate(this.value);"/>
+                        <div class="status" id="status"></div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Password: </label>
+                        <input required name="password" type="password" class="form-control inputpass" minlength="4"
+                               maxlength="16" id="pass1"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_login" value="Login">
+                    </div>
+
+                    <label> <a routerLink="/recovery"> Recovery password.</a></label>
+                    <label> <a routerLink="/signin">Don't have an account? Sign in!</a></label>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
