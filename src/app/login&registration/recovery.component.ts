@@ -2,8 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'recovery-module',
-  templateUrl: './recovery.component.html',
-  styleUrls: ['./css/style.css']
+  templateUrl: './recovery.component.html'
 })
 export class RecoveryComponent implements OnInit {
 

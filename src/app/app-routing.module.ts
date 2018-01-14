@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './login&registration/login.component';
 import { RegistrationComponent } from './login&registration/registration.component';
-import { RecoveryComponent } from './login&registration/registration.component';
+import { RecoveryComponent } from './login&registration/recovery.component';
 import { CalComponent } from './calendar/calendar.component';
 
 const routes: Routes = [
