@@ -1,68 +1,50 @@
 <div class="container">
-        <div class="row"> 
-    <legend class="text-left">User personal data</legend>
+    <div class="row">
+        <legend class="text-left">User personal data</legend>
 
-<div class="col-md-6">
+        <div class="col-md-6">
 
-    <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName"
-                   required
-                   [(ngModel)]="userData.firstName" name="name">
-          </div>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" required [(ngModel)]="userData.firstName" name="name">
+            </div>
 
-      
-          <div class="form-group">
+
+            <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" id="lastName"
-                       required
-                       [(ngModel)]="userData.lastName" name="name">
-              </div>
+                <input type="text" class="form-control" id="lastName" required [(ngModel)]="userData.lastName" name="name">
+            </div>
 
-
-              <div class="form-group">
-                    <label for="age">Age</label>
-                    <input type="text" class="form-control" id="age"
-                           required
-                           [(ngModel)]="userData.age" name="name">
-                  </div>
-
-
-                  <div class="form-group">
-                        <label for="pesel">Pesel</label>
-                        <input type="text" class="form-control" id="pesel"
-                               required
-                               [(ngModel)]="userData.pesel" name="name">
-                      </div>
-
-                      <div class="form-group">
-                            <label for="gender">Gender</label>
-                            <input type="text" class="form-control" id="gender"
-                                   required
-                                   [(ngModel)]="userData.gender" name="name">
-                          </div>
 
             <div class="form-group">
-            
-                <label>Gender:
-                    <input [(ngModel)]="userData.gender">
-                </label>
-            </div>  
-            
-                <div class="form-group">
-            
-                <label>Telephone:
-                    <input [(ngModel)]="userData.telephone">
-                </label>
-                </div>
+                <label for="age">Age</label>
+                <input type="text" class="form-control" id="age" required [(ngModel)]="userData.age" name="name">
+            </div>
+
 
             <div class="form-group">
-            
-                <label>Address:
-                    <input [(ngModel)]="userData.address">
-                </label>
-                </div>  
-       
-</div>
+                <label for="pesel">Pesel</label>
+                <input type="text" class="form-control" id="pesel" required [(ngModel)]="userData.pesel" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="text" class="form-control" id="gender" required [(ngModel)]="userData.gender" name="name">
+            </div>
+
+
+            <div class="form-group">
+                <label for="telephone">First Name</label>
+                <input type="text" class="form-control" id="telephone" required [(ngModel)]="userData.telephone" name="telephone">
+            </div>
+
+            <div class="form-group">
+                <label for="address">First Name</label>
+                <input type="text" class="form-control" id="address" required [(ngModel)]="userData.address" name="address">
+            </div>
+
+
+
         </div>
     </div>
+</div>
