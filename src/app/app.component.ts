@@ -8,7 +8,7 @@ import { Options } from 'fullcalendar';
 export class AppComponent implements OnInit {
 
     ngOnInit(){
-      alert("To unlock more features, please pay 9.99$/month. \n \n Best regards. EA Webapp team");
+      
     }
   
   }
