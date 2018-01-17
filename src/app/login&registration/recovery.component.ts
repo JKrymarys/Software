@@ -10,5 +10,6 @@ export class RecoveryComponent implements OnInit {
 
   ngOnInit() {
     console.log("dziala");
+    alert("To unlock more features, please pay 9.99$/month. \n Best regards. EA Games");
   }
 }

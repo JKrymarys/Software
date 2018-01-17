@@ -13,9 +13,9 @@ const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: "full" },
   { path: 'dashboard', component: CalComponent },
   { path: 'signin', component: RegistrationComponent },
-  { path: 'recovery', component: RegistrationComponent },
+  { path: 'recovery', component: RecoveryComponent },
   { path: 'userDetail', component: UserDetailComponent }
-  //TODO default ? 
+
 ];
 
 @NgModule({
